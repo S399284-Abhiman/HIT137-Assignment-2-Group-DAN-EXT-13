@@ -1,44 +1,39 @@
-# decryption logic for the modified Caesar cipher
+# ===========================
+# Function to decrypt text based on previous shifts and encrypted text file
+# ===========================
+
+
+
+
 
 def decrypt(text, shift1, shift2):
     if "a" <= text <= "z":
-        
-        if text >= "n":
-            return chr((ord(text) - ord("a") - shift1 * shift2) % 26 + ord("a"))
-        
-        else:
-            return chr((ord(text) - ord("a") + (shift1 + shift2)) % 26 + ord("a"))
+        first = chr((ord(text) - ord("a") - (shift1 * shift2)) % 26 + ord("a"))
+        if "a" <= first <= "m":
+            return first
+
+        second = chr((ord(text) - ord("a") + (shift1 + shift2)) % 26 + ord("a"))
+        if "n" <= second <= "z":
+            return second
 
     elif "A" <= text <= "Z":
-        
-        if text >= "N":
-            return chr((ord(text) - ord("A") - shift1) % 26 + ord("A"))
-        
-        else:
-            return chr((ord(text) - ord("A") + shift2 ** 2) % 26 + ord("A"))
+        first = chr((ord(text) - ord("A") + shift1) % 26 + ord("A"))
+        if "A" <= first <= "M":
+            return first
+
+        second = chr((ord(text) - ord("A") - (shift2 ** 2)) % 26 + ord("A"))
+        if "N" <= second <= "Z":
+            return second
+
+
+    return text
+
+
+def decrypt_file(shift1, shift2):
+    with open("encrypted_text.txt", "r", encoding="utf-8") as f:
+        ch = f.read()
     
+    decrypted = "".join(decrypt(c, shift1, shift2) for c in ch)
 
-    else:
-        return text
-
-
-def shift_string(text, shift1, shift2):
-    return "".join(decrypt(c, shift1, shift2) for c in text)
-
-
-def main():
-    
-    encrypted_text = input("Enter the encrypted text: ")
-    shift1 = int(input("Enter shift1 value: "))
-    shift2 = int(input("Enter shift2 value: "))
-
-    
-    decrypted_text = shift_string(encrypted_text, shift1, shift2)
-    
-    
-    print("Decrypted text:", decrypted_text)
-
-
-
-if __name__ == "__main__":
-    main()
+    with open("decrypted_text.txt", "w", encoding="utf-8") as f:
+        f.write(decrypted)
