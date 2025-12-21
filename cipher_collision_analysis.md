@@ -2,7 +2,7 @@ The Encryption method used in this program applies fixed shift values to charact
 
 This can be expressed using equation below:
 
-                                            E (x) = (x + k) mod N
+                                                  E (x) = (x + k) mod N
 
 where x is a character index,
 k is constant derived from shift1 and shift2 and,
