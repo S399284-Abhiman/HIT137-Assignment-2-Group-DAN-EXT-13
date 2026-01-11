@@ -1,7 +1,5 @@
-# ===========================
-# Function to encrypt text based on given shifts
-# ===========================
-
+# Reads plaintext from raw_text.txt, encrypts character-by-character,
+# and writes the result to encrypted_text.txt
 
 
 def encrypt(text, shift1, shift2):
