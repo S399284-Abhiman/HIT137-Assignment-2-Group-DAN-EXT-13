@@ -1,8 +1,7 @@
-# ===========================
-# Function to decrypt text based on previous shifts and encrypted text file
-# ===========================
-
-
+# ==========================================================
+# Decryption logic for the custom file-based cipher
+# Handles ambiguous cases caused by encryption collisions
+# ==========================================================
 
 
 
@@ -25,7 +24,8 @@ def decrypt(text, shift1, shift2):
         if "N" <= second <= "Z":
             return second
 
-
+    
+# Fallback for non-alphabetic or ambiguous characters
     return text
 
 
