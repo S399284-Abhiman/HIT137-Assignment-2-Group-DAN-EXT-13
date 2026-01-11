@@ -1,1 +1,65 @@
+QUESTION 1 – FILE ENCRYPTION AND DECRYPTION PROGRAM
+
+OVERVIEW
+This program implements a file-based encryption and decryption system using the rules provided in the assignment. The program reads text from a file, encrypts it using user-defined shift values, decrypts the encrypted text, and verifies whether the decrypted output matches the original input.
+The main focus of this solution is correct rule implementation, modular program design, and safe handling of ambiguous decryption cases.
+
+
+PROGRAM STRUCTURE
+The solution is divided into multiple Python files to improve clarity and maintainability.
+Files included:
+encryption.py
+decryption.py
+verification.py
+main.py
+raw_text.txt
+encrypted_text.txt
+decrypted_text.txt
+cipher_collision_analysis.md
+README.txt
+
+
+FILE DESCRIPTIONS
+
+encryption.py
+Contains the encryption logic.
+Each character from the input file is processed individually using ASCII comparisons and shifting rules. The program uses ord() and chr() to convert characters to numeric values, applies the required shifts, and wraps around the alphabet using modulo arithmetic. Characters that are not letters are left unchanged. The encrypted output is written to encrypted_text.txt.
+
+decryption.py
+Contains the decryption logic.
+Because the original encryption rule used for each character is unknown, the decryption function attempts all valid inverse operations and checks which result fits the expected alphabet range. If decryption is ambiguous, the original character is returned to prevent errors. This ensures the program remains stable even when collisions occur.
+
+verification.py
+Compares raw_text.txt and decrypted_text.txt.
+If both files match exactly, the program reports that decryption was successful. If not, it reports a mismatch, which may occur due to unavoidable cipher collisions.
+
+main.py
+Acts as the main controller of the program.
+It prompts the user to enter shift1 and shift2, then calls the encryption, decryption, and verification functions in the correct order. This file is the entry point of the program.
+
+
+CIPHER LIMITATIONS AND COLLISIONS
+The mathematical reasoning behind encryption collisions and ambiguous decryption is explained separately in:
+cipher_collision_analysis.md
+This file explains why collisions occur, why perfect reversibility is not guaranteed, and why some texts still decrypt correctly. The explanation is kept separate from the code to maintain clarity.
+
+
+KEY PYTHON CONCEPTS USED
+Character comparison using ASCII ranges
+ord() and chr() for character shifting
+Modulo arithmetic for alphabet wrap-around
+File handling using context managers
+Generator expressions
+Defensive programming for ambiguous cases
+Modular program structure
+
+
+HOW TO RUN
+Ensure all files are in the same directory
+Place the input text in raw_text.txt
+Run the program using:
+python main.py
+Enter shift1 and shift2 when prompted
+Check the output files for results
+
 
