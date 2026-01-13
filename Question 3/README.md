@@ -44,13 +44,20 @@
 
  ### User Inputs                 
 
-##### Number of sides	             
-  Determines the base polygon (e.g. 3 = triangle, 4 = square)
+#### Number of sides:	             
+  Determines the base polygon (e.g. 3 = triangle, 4 = square).
 
-##### Side length (pixels)	       
-  Length of each polygon side
+#### Side length (pixels):	       
+  Length of each polygon side.
 
-##### Recursion depth	              
-  Number of recursive subdivisions
+#### Recursion depth:	              
+  Number of recursive subdivisions.
 
+
+### Example
+  Enter the number of sides: 4
+  
+  Enter the side length (pixels): 300
+  
+  Enter the recursion depth: 3
 
