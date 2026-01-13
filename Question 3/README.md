@@ -42,12 +42,15 @@
   2.	    draw_inward_koch_polygon()
       Draws a polygon where each side is a Koch curve.
 
- ### User Inputs                  Input	Description
+ ### User Inputs                 
 
-Number of sides	              Determines the base polygon (e.g. 3 = triangle, 4 = square)
+##### Number of sides	             
+      Determines the base polygon (e.g. 3 = triangle, 4 = square)
 
-Side length (pixels)	        Length of each polygon side
+##### Side length (pixels)	       
+      Length of each polygon side
 
-Recursion depth	              Number of recursive subdivisions
+###### Recursion depth	              
+      Number of recursive subdivisions
 
 
