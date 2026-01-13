@@ -14,7 +14,7 @@
 ## How It Works:
   ### Koch Inward Rule
 
-  For each straight line:
+    For each straight line:
   
   1.	Divide the line into three equal segments
      
