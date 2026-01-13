@@ -1,4 +1,4 @@
-3
+
 import turtle
 
 def koch_inward(t, order, size):
