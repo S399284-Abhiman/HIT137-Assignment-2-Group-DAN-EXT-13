@@ -35,14 +35,14 @@
    •	main block Collects user input and starts the drawing.
 
    
-### Code Structure
+## Code Structure
   1.	  koch_inward()
       Recursive function that draws a single inward Koch curve.
 
   2.	    draw_inward_koch_polygon()
       Draws a polygon where each side is a Koch curve.
 
- ### User Inputs                 
+ ## User Inputs                 
 
 #### Number of sides:	             
   Determines the base polygon (e.g. 3 = triangle, 4 = square).
@@ -54,10 +54,20 @@
   Number of recursive subdivisions.
 
 
-### Example
+## Example
   Enter the number of sides: 4
   
   Enter the side length (pixels): 300
   
   Enter the recursion depth: 3
+
+## How to Run
+1.	Run the program using:
+   
+2.	    Recursive Function (Koch Polygon).py
+
+3.	Enter the requested values when prompted.
+
+
+
 
