@@ -44,7 +44,7 @@
 
  ### User Inputs                 
 
-##### Number of sides	             
+#### Number of sides	             
       Determines the base polygon (e.g. 3 = triangle, 4 = square)
 
 ##### Side length (pixels)	       
