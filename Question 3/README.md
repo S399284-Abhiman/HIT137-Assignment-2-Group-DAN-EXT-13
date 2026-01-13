@@ -5,11 +5,11 @@
   
   #### The user can control:
  
-  •	The number of sides of the starting polygon.
+   •	The number of sides of the starting polygon.
  
-  •	The length of each side.
+   •	The length of each side.
 
-  •	The recursion depth (how many times the Koch indentation recurs).
+   •	The recursion depth (how many times the Koch indentation recurs).
 
 ## How It Works:
   ### Koch Inward Rule
@@ -26,12 +26,20 @@
 
   #### Polygon Construction
   
-  •	A regular polygon is drawn
+   •	A regular polygon is drawn
   
-  •	Each side of the polygon is replaced by an inward Koch curve.
+   •	Each side of the polygon is replaced by an inward Koch curve.
   
-  •	The turtle turns by 360 / number of sides after each side.
+   •	The turtle turns by 360 / number of sides after each side.
   
-  •	main block Collects user input and starts the drawing.
+   •	main block Collects user input and starts the drawing.
+
+   
+### Code Structure
+  1.	  koch_inward()
+      Recursive function that draws a single inward Koch curve.
+
+  2.	    draw_inward_koch_polygon()
+      Draws a polygon where each side is a Koch curve.
 
 
