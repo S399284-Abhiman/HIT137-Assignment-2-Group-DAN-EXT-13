@@ -32,7 +32,7 @@ Decisions regarding program structure, logic, and presentation were made collabo
 | *Abhiman Bhattarai (S399284)* | `S399284-Abhiman` |
 | *Antim (S397254)* | `Antim10` |
 | *Samuel Jacob Reid (S386533)* | `sjreading` |
-| *Zachary DEsmond Mullen (S366010)* | `ZMullen2004` |
+| *Zachary Desmond Mullen (S366010)* | `ZMullen2004` |
 
 > **Note:** GitHub usernames differ from real names and are listed separately for clarity.
 
