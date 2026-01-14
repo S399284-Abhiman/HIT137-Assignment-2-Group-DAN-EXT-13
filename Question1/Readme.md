@@ -11,12 +11,13 @@ The main focus of this solution is correct rule implementation, modular program 
 The solution is divided into multiple Python files to improve clarity and maintainability.
 
 ### Files included
-- `encryption.py`
-- `decryption.py`
-- `verification.py`
-- `main.py`
 - `cipher_collision_analysis.md`
 - `README.md`
+- `codes`
+  - `encryption.py`
+  - `decryption.py`
+  - `verification.py`
+  - `main.py`
 - `examples/`
   - `raw_text.txt`
   - `encrypted_text.txt`
