@@ -13,7 +13,7 @@ The solution is divided into multiple Python files to improve clarity and mainta
 ### Files included
 - `cipher_collision_analysis.md`
 - `README.md`
-- `codes`
+- `codes/`
   - `encryption.py`
   - `decryption.py`
   - `verification.py`
