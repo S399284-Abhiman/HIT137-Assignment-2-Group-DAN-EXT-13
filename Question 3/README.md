@@ -61,6 +61,8 @@
   
   Enter the recursion depth: 3
 
+  See Example Output File for an image created using the above parameters. 
+
 ## How to Run
 1.	Run the program using:
    
