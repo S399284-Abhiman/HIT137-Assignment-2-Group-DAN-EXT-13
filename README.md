@@ -29,48 +29,14 @@ Decisions regarding program structure, logic, and presentation were made collabo
 
 | Name | GitHub Username |
 |-----|----------------|
-| *Member 1 Name* | `github-username-1` |
-| *Member 2 Name* | `github-username-2` |
-| *Member 3 Name* | `github-username-3` |
-| *Member 4 Name* | `github-username-4` |
+| *Abhiman Bhattarai (S399284)* | `S399284-Abhiman` |
+| *Antim (S397254)* | `Antim10` |
+| *Samuel Jacob Reid (S386533)* | `Sjreading` |
+| *Zachary DEsmond Mullen (S366010)* | `ZMullen2004` |
 
 > **Note:** GitHub usernames differ from real names and are listed separately for clarity.
 
----
 
-## REPOSITORY STRUCTURE
-
-HIT137-Assignment-2-Group-DAN-EXT-13/
-│
-├── Question 1/
-│   ├── codes/
-│   │   ├── encryption.py
-│   │   ├── decryption.py
-│   │   ├── file.py
-│   │   └── main.py
-│   ├── Examples/
-│   │   ├── raw_text.txt
-│   │   ├── encrypted_text.txt
-│   │   └── decrypted_text.txt
-│   ├── cipher_collision_analysis.md
-│   └── Readme.md
-│
-├── Question 2/
-│   ├── analysis.py
-│   ├── config.py
-│   ├── data_utils.py
-│   ├── main.py
-│   └── temperatures/
-│       ├── stations_group_1994.csv
-│       ├── stations_group_1995.csv
-│       └── ...
-│
-├── Question 3/
-│   ├── Main.py
-│   ├── Example Output.md
-│   └── README.md
-│
-└── README.md
 
 ---
 
