@@ -1,4 +1,4 @@
-# QUESTION 1 – TEMPERATURE ANALYSIS PROGRAM
+# QUESTION 2 – TEMPERATURE ANALYSIS PROGRAM
 
 ## OVERVIEW
 This program analyzes temperature data from multiple weather stations in Australia.  
@@ -12,14 +12,11 @@ The main focus of this solution is modular program design, clear data handling, 
 The solution is divided into multiple Python files to improve clarity and maintainability.
 
 ### Files included
-- `main.py`
-- `config.py`
-- `data_utils.py`
-- `analysis/`
-  - `__init__.py`
-  - `seasonal.py`
-  - `range_analysis.py`
-  - `stability.py`
+- `codes/`
+  - `main.py`
+  - `config.py`
+  - `data_utils.py`
+  - `analysis.py`
 - `temperatures/` (folder containing CSV files)
 - `README.md`
 
@@ -38,18 +35,16 @@ Handles loading and combining all CSV files from the `temperatures/` folder into
 - Ensures BOM and whitespace in column names are handled correctly.  
 - Raises an error if no CSV files are found.
 
-### analysis/seasonal.py
+### analysis.py
 Calculates **seasonal averages** across all stations.  
 - Flattens monthly data for each season.  
 - Ignores missing values (`NaN`).  
 - Writes results to `average_temp.txt`.
 
-### analysis/range_analysis.py
 Calculates **temperature range** (Max - Min) for each station.  
 - Identifies station(s) with the largest temperature range.  
 - Writes results to `largest_temp_range_station.txt`.
 
-### analysis/stability.py
 Calculates **temperature stability** for each station using standard deviation.  
 - Identifies the most stable and most variable stations.  
 - Writes results to `temperature_stability_stations.txt`.
@@ -96,3 +91,4 @@ These files are created in the same directory as `main.py`.
 
 ```bash
 python main.py
+
