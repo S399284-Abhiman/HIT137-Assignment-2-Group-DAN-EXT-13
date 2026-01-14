@@ -64,7 +64,7 @@
 ## How to Run
 1.	Run the program using:
    
-2.	    Recursive Function (Koch Polygon).py
+2.	    Main.py
 
 3.	Enter the requested values when prompted.
 
